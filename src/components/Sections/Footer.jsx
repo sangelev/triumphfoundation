@@ -28,13 +28,13 @@ export default function Contact() {
                 className="font15 extraBold whiteColor"
                 style={{ marginLeft: "15px" }}
               >
-                Lean Global Consulting
+                Triumph Foundation
               </h1>
             </Link>
             <StyleP className="whiteColor font13">
               © {getCurrentYear()} -{" "}
-              <span className="purpleColor font13">Lean Global Consulting</span>{" "}
-              All Right Reserved
+              <span className="purpleColor font13">Triumph Foundation</span> All
+              Right Reserved
             </StyleP>
 
             <Link

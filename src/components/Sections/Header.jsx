@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import HeaderImage from "../../assets/img/logo verzija 1-14.avif";
+import HeaderImage from "../../assets/img/logo512.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
@@ -12,7 +12,7 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Lean Global Consulting</h1>
+          <h1 className="extraBold font60">Triumph Foundation</h1>
         </div>
       </LeftSide>
       <RightSide>

@@ -11,7 +11,7 @@ export default function Testimonials() {
       <div className="lightBg" style={{ padding: "50px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Testimonials</h1>
+            <h1 className="font40 extraBold">Gallery</h1>
           </HeaderInfo>
           <TestimonialSlider />
         </div>

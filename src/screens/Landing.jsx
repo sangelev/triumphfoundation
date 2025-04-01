@@ -11,6 +11,10 @@ import Footer from "../components/Sections/Footer";
 import AboutUs from "../components/Sections/AboutUs";
 // import WhyLean from "../components/Sections/WhyLean";
 import Testimonials from "../components/Sections/Testimonials";
+import { Document, Page } from "react-pdf";
+// import ReactPDF from "../components/ReactPDF";
+import englishPdf from "./../welcome_to_triumph.pdf"; // Import your PDF file
+import { PDFViewer } from "@react-pdf/renderer";
 
 // Home
 
@@ -29,11 +33,22 @@ export default function Landing() {
       {/* <About /> */}
       <AboutUs />
       {/* <WhyLean /> */}
-      <Blog />
-      <Services />
+      {/* <Blog /> */}
+      {/* <Services /> */}
       {/* <Projects /> */}
       <Testimonials />
       {/* <Pricing /> */}
+      {/* <ReactPDF
+        file={{
+          url: "http://www.example.com/sample.pdf",
+        }}
+      /> */}
+      {/* <embed src="/src/welcome_to_triumph.pdf" width="800px" height="2100px" /> */}
+      {/* {
+        <PDFViewer width="800px" height="2100px">
+          <Document file={englishPdf}>{}</Document>
+        </PDFViewer>
+      } */}
       <Contact />
       <Footer />
     </>

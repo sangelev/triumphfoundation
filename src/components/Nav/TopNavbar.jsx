@@ -65,7 +65,7 @@ export default function TopNavbar() {
                 About
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -76,8 +76,8 @@ export default function TopNavbar() {
               >
                 Why Lean?
               </Link>
-            </li>
-            <li className="semiBold font15 pointer">
+            </li> */}
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -88,7 +88,7 @@ export default function TopNavbar() {
               >
                 Services
               </Link>
-            </li>
+            </li> */}
             <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
@@ -98,7 +98,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Testimonials
+                Gallery
               </Link>
             </li>
             {/* <li className="semiBold font15 pointer">

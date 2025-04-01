@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import styled from "styled-components";
 // Assets
 import ContactImg1 from "../../assets/img/contact-1.png";
@@ -6,6 +6,27 @@ import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  const handleChange = (e) => {
+    console.log("Form data changed:", e.target);
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form data submitted:", formData);
+    // Here you would typically handle form submission logic,
+    // such as sending data to an API.
+  };
+
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -15,13 +36,14 @@ export default function Contact() {
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <label className="font13">First name:</label>
                 <input
                   type="text"
                   id="fname"
                   name="fname"
                   className="font20 extraBold"
+                  onChange={handleChange}
                 />
                 <label className="font13">Email:</label>
                 <input
@@ -29,6 +51,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   className="font20 extraBold"
+                  onChange={handleChange}
                 />
                 <label className="font13">Subject:</label>
                 <input
@@ -36,6 +59,7 @@ export default function Contact() {
                   id="subject"
                   name="subject"
                   className="font20 extraBold"
+                  onChange={handleChange}
                 />
                 <textarea
                   rows="4"
@@ -44,6 +68,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   className="font20 extraBold"
+                  onChange={handleChange}
                 />
               </Form>
               <SumbitWrapper className="flex">
